@@ -266,7 +266,7 @@ input::placeholder {
 }
 
 .main_container p {
-    color: #b66fba;
+    color: #905d93;
     font-size: 1.5rem;
     font-weight: 300;
     margin: 1rem;
@@ -337,7 +337,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     font-size: 1rem;
-    color: #551A8B;
+    color: #937baa;
     margin-bottom: 0.5rem;
 }
 
