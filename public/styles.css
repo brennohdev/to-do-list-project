@@ -1,10 +1,10 @@
-/* Reset básico de estilos */
+
 * {
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
-    font-family: 'Dm Sans', sans-serif; /* Corrigido para usar a fonte correta */
+    font-family: 'Dm Sans', sans-serif; 
 }
 
 body {
@@ -21,7 +21,7 @@ header {
     align-items: center;
     box-shadow: #b3b3b3 0px 0px 0.4rem;
     border-radius: 0.3rem;
-    margin-left: 16.5rem; /* Pode ser ajustado para responsividade */
+    margin-left: 16.5rem; 
 }
 
 html {
@@ -34,7 +34,7 @@ a {
 
 a:focus, a:active {
     color: #551A8B;
-    outline: none; /* Remove o contorno padrão */
+    outline: none; 
 }
 
 h1 {
@@ -61,7 +61,7 @@ nav {
 
 .search-container {
     display: flex;
-    align-items: center; /* Centraliza o ícone verticalmente */
+    align-items: center;
     position: relative;
     width: 100%;
 }
@@ -71,18 +71,18 @@ nav {
     color: #87058e;
     padding: 0.5rem;
     position: absolute;
-    left: 10px; /* Ajuste a posição horizontal do ícone */
+    left: 10px; 
 }
 
 #header_search {
     margin-right: auto;
     width: 100%;
     display: flex;
-    justify-content: center; /* Centraliza a barra de pesquisa */
+    justify-content: center; 
 }
 
 #header_search input {
-    padding: 0.5rem 1rem 0.5rem 2.5rem; /* padding: top right bottom left */
+    padding: 0.5rem 1rem 0.5rem 2.5rem; 
     border: none;
     border-radius: 0.5rem;
     background: none;
@@ -90,7 +90,7 @@ nav {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%; /* O input ocupa o máximo de espaço disponível */
+    width: 100%; /
     transition: 0.5s all ease;
 }
 
@@ -232,7 +232,7 @@ input::placeholder {
 /* Main container */
 .main_container {
     display: flex;
-    margin-left: 17rem; /* Ajustar para telas menores */
+    margin-left: 17rem; 
     padding: 1rem;
 }
 
@@ -378,57 +378,57 @@ input::placeholder {
     text-decoration: underline;
 }
 
-/* Media Queries para Responsividade */
+/* Media Queries */
 @media (max-width: 768px) {
     header {
-        margin-left: 0; /* Remove a margem em telas menores */
-        flex-direction: column; /* Altera a direção do flex */
+        margin-left: 0; 
+        flex-direction: column; 
     }
 
     .left_container {
-        position: relative; /* Muda para relativo em telas menores */
-        width: 100%; /* Ocupa 100% da largura */
-        height: auto; /* Ajusta a altura */
+        position: relative; 
+        width: 100%; 
+        height: auto; 
     }
 
     .main_container {
-        margin-left: 0; /* Remove a margem em telas menores */
-        flex-direction: column; /* Altera a direção do flex */
+        margin-left: 0; 
+        flex-direction: column; 
     }
 
     .main_container img {
-        width: 100%; /* Imagem ocupa 100% da largura */
-        height: auto; /* Mantém a proporção */
+        width: 100%; 
+        height: auto; 
     }
 
     .tasks a {
-        padding: 1rem; /* Reduz o padding */
-        font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+        padding: 1rem; 
+        font-size: 0.8rem; 
     }
 
     .inicial_tools_options {
-        flex-direction: column; /* Altera a direção do flex */
+        flex-direction: column; 
     }
 
     .inicial_tools_options a {
-        width: 100%; /* Ocupa 100% da largura */
+        width: 100%; 
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.5rem; /* Reduz o tamanho do título */
+        font-size: 1.5rem; 
     }
 
     .main_container h1 {
-        font-size: 2rem; /* Ajusta o tamanho do título principal */
+        font-size: 2rem;
     }
 
     .main_container p {
-        font-size: 1rem; /* Ajusta o tamanho do parágrafo */
+        font-size: 1rem;
     }
 
     .bottom_tools a {
-        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        font-size: 1rem; 
     }
 }
