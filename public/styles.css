@@ -1,0 +1,265 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #b3b3b3 0px 0px 0.4rem;
+    border-radius: 0.3rem;
+    margin-left: 16.5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #901795;
+    font-size: 1.5rem;
+}
+
+/* Header */
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+
+#logo_header {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+#logo_header img {
+    width: 5vw;
+    height: 7vh;
+    margin-right: 0.5rem;
+}
+.search-container {
+    display: flex;
+    align-items: center; /* Centraliza o ícone verticalmente */
+    position: relative;
+    width: 100%;
+}
+
+.search-container ion-icon {
+    font-size: larger;
+    color: #87058e;
+    padding: 0.5rem;
+    position: absolute;
+    left: 10px; /* Ajuste a posição horizontal do ícone */
+}
+
+#header_search {
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza a barra de pesquisa */
+
+}
+
+
+#header_search input {
+    padding: 0.5rem 1rem 0.5rem 2.5rem; /* padding: top right bottom left */
+    border: none;
+    border-radius: 0.5rem;
+    background: none;
+    color: #000000;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* O input ocupa o máximo de espaço disponível */
+    transition: 0.5s all ease;
+}
+
+#header_search input:hover {
+    background: #f0f0f0;
+}
+
+input::placeholder {
+    font-size: medium;
+    font-weight: 100;
+}
+
+
+.header_content #content{
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.header_content #content a {
+    color: #87058e;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: 1.5s ease;
+
+}
+
+.header_content #content a:hover {
+    color: #901795;
+    border-radius: 0.5rem;
+    transform: scale(1.1);
+}
+
+/* Left container */
+
+.left_container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 16rem;
+    height: 53rem;
+    padding: 1rem;
+    top: 0;
+    border: #b3b3b3 0.1rem solid;
+    box-shadow: #b3b3b3 0px 0px 0.4rem;
+    border-radius: 0.3rem;
+}
+
+.tools_navegation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.tools_navegation #tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#tools a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    text-decoration: none;
+    color: #87058e;
+    font-size: 1.1rem;
+    transition: 0.5s ease;
+}
+
+#tools a span {
+    margin-left: auto;
+}
+
+
+#tools a:hover {
+    background: #f0f0f0;
+    border-radius: 0.5rem;
+}
+
+
+.recent_tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height: auto;
+}
+
+.tasks a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    width: 100%;
+    text-decoration: none;
+    color: #87058e;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.tasks a:hover {
+    transform: scale(1.02);
+}
+
+.bottom_tools {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.bottom_tools a {
+
+    text-decoration: none;
+    color: #87058e;
+    font-size: 1.2rem;
+    transition: 0.5s ease;
+}
+
+.bottom_tools a:hover {
+    background-color: #f0f0f0;
+    border: #f0f0f0 0.1rem solid;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+
+
+/* Main container */
+.main_container{
+    display: flex;
+    margin-left: 17rem;
+    padding: 1rem;
+}
+.main_container img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.main_container h1 {
+    color: #87058e;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.main_container p {
+    color: #b66fba;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 1rem;
+}
