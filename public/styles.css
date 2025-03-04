@@ -4,7 +4,7 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Dm Sans, sans-serif;
     font-weight: 300;
 }
 
@@ -30,6 +30,11 @@ html {
 
 a {
     text-decoration: none;
+}
+
+a:focus, a:active {
+    color: #551A8B;
+    outline: none; /* Remove o contorno padrão */
 }
 
 h1 {
@@ -130,8 +135,8 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     position: fixed;
-    width: 16rem;
-    height: 53rem;
+    width: 13vw;
+    height: 100vh;
     padding: 1rem;
     top: 0;
     border: #b3b3b3 0.1rem solid;
@@ -183,6 +188,8 @@ input::placeholder {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    background-color: #fafafa;
+    border-radius: 0.5rem;
 }
 
 .tasks {
@@ -244,16 +251,17 @@ input::placeholder {
     padding: 1rem;
 }
 .main_container img {
-    width: 30rem;
-    height: 30rem;
+    width: 35rem;
+    height: 35rem;
+    margin-top: 2.5rem;
     object-fit: cover;
     border-radius: 1rem;
 }
 
 .main_container h1 {
     color: #87058e;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: bold;
     margin: 1rem;
 }
 
@@ -262,4 +270,114 @@ input::placeholder {
     font-size: 1.5rem;
     font-weight: 300;
     margin: 1rem;
+}
+
+.inicial_navegations_tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #fcfbfb;
+    border-radius: 1rem;
+    box-shadow: #dbdada 0px 0px 0.5rem;
+}
+
+.inicial_tools_options {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.inicial_tools_options a {
+    background-color: #ebeaea70;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.inicial_tools_options a span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.inicial_tools_options a:hover {
+    background-color: #ebeaea;
+    border-radius: 1rem;
+}
+
+.inicial_tools_options a #new_task_details {
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.inicial_tools_options a h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.inicial_tools_options a ion-icon {
+    font-size: 1.4rem;
+    color: #87058e;
+}
+
+.container {
+    width: 100%;
+    height: 50%;
+    margin-top: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #551A8B;
+    margin-bottom: 0.5rem;
+}
+
+.icon {
+    margin-right: 0.5rem;
+}
+
+.card {
+    background-color: #ebeaea;
+    padding: 2rem;
+    height: 40vh;
+    border-radius: 0.8rem;
+    text-align: center;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+.icon-box {
+    background-color: #c4c2c2;
+    width: 3rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    margin: 0 auto 1rem auto;
+}
+
+.icon-box span {
+    color: #aaa;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.new-event {
+    color: #1b1a1b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.new-event:hover {
+    text-decoration: underline;
 }

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -112,18 +115,64 @@
             <div class="main_container_content">
                 <div class="inicial_message">
                     <h1 id="main_content_title">
-                        Bem-vindo(a), {usuario}, ao seu To do List!
+                        Bem-vindo ao seu To do List!
                     </h1>
                     <p>Aqui você gerencia suas tarefas de uma maneira muito mais eficáz.</p>
                     <p>Vamos começar?</p>
                 </div>
 
                 <div class="inicial_navegations_tools">
-                    
+                    <div class="inicial_tools_options">
+                        <a href="#">
+                            <span>
+                                <h4>Criar nova tarefa</h4>
+                                <ion-icon name="add-outline"></ion-icon>
+                            </span>
+                            <p id="new_task_details">
+                                Crie uma nova tarefa simples e rápida <br>
+                                para começar a organizar seu dia.
+                            </p>
+                        </a>
+                        <a href="#">
+                            <span>
+                                <h4>Criar novo projeto</h4>
+                                <ion-icon name="folder-outline"></ion-icon>
+                            </span>
+                            <p id="new_task_details">
+                                Crie um novo projeto <br>
+                                com um conjunto de tarefas para se planejar de uma maneira <br>
+                                mais detalhista.
+                            </p>
+                        </a>
+                        <a href="#">
+                            <span>
+                                <h4>Adicionar evento</h4>
+                                <ion-icon name="calendar-outline"></ion-icon>
+                            </span>
+                            <p id="new_task_details">
+                                Adicione um evento ao seu calendário <br>
+                                para organizar os seus compromissos.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="header">
+                        <i class="icon">📅</i>
+                        <span>Próximos eventos</span>
+                    </div>
+                    <div class="card">
+                        <div class="icon-box">
+                            <span><ion-icon name="calendar-number-outline"></ion-icon></span>
+                        </div>
+                        <p>Não há eventos nos próximos 3 dias</p>
+                        <a href="#" class="new-event">+ Novo evento</a>
+                    </div>
                 </div>
             </div>
-
-    
+        </div>
+    </div>
     
     
     
