@@ -307,6 +307,12 @@ input::placeholder {
     padding: 0.5rem;
 }
 
+.inicial_tools_options p {
+    color: #87058e;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 .inicial_tools_options a:hover {
     background-color: #ebeaea;
     border-radius: 1rem;
