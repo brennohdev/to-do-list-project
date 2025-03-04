@@ -4,8 +4,7 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
-    font-family: Dm Sans, sans-serif;
-    font-weight: 300;
+    font-family: 'Dm Sans', sans-serif; /* Corrigido para usar a fonte correta */
 }
 
 body {
@@ -13,15 +12,16 @@ body {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans;
+    font-family: Arial, sans-serif;
 }
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: #b3b3b3 0px 0px 0.4rem;
     border-radius: 0.3rem;
-    margin-left: 16.5rem;
+    margin-left: 16.5rem; /* Pode ser ajustado para responsividade */
 }
 
 html {
@@ -43,14 +43,9 @@ h1 {
 }
 
 /* Header */
-body {
-    font-family: Arial, sans-serif;
-}
-
 nav {
     display: flex;
 }
-
 
 #logo_header {
     display: flex;
@@ -63,6 +58,7 @@ nav {
     height: 7vh;
     margin-right: 0.5rem;
 }
+
 .search-container {
     display: flex;
     align-items: center; /* Centraliza o ícone verticalmente */
@@ -83,9 +79,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center; /* Centraliza a barra de pesquisa */
-
 }
-
 
 #header_search input {
     padding: 0.5rem 1rem 0.5rem 2.5rem; /* padding: top right bottom left */
@@ -109,8 +103,7 @@ input::placeholder {
     font-weight: 100;
 }
 
-
-.header_content #content{
+.header_content #content {
     gap: 0.5rem;
     padding: 0.5rem;
 }
@@ -120,7 +113,6 @@ input::placeholder {
     font-size: 2rem;
     font-weight: 500;
     transition: 1.5s ease;
-
 }
 
 .header_content #content a:hover {
@@ -130,7 +122,6 @@ input::placeholder {
 }
 
 /* Left container */
-
 .left_container {
     display: flex;
     flex-direction: column;
@@ -176,15 +167,13 @@ input::placeholder {
     margin-left: auto;
 }
 
-
 #tools a:hover {
     background: #f0f0f0;
     border-radius: 0.5rem;
 }
 
-
 .recent_tasks {
-    display: flex;
+ display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
@@ -210,7 +199,6 @@ input::placeholder {
     text-decoration: none;
     color: #87058e;
     font-size: 0.9rem;
-    text-decoration: none;
     transition: 0.5s ease;
 }
 
@@ -228,7 +216,6 @@ input::placeholder {
 }
 
 .bottom_tools a {
-
     text-decoration: none;
     color: #87058e;
     font-size: 1.2rem;
@@ -242,14 +229,13 @@ input::placeholder {
     padding: 1rem;
 }
 
-
-
 /* Main container */
-.main_container{
+.main_container {
     display: flex;
-    margin-left: 17rem;
+    margin-left: 17rem; /* Ajustar para telas menores */
     padding: 1rem;
 }
+
 .main_container img {
     width: 35rem;
     height: 35rem;
@@ -372,7 +358,7 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.5rem;
+    border-radius: 0 .5rem;
     margin: 0 auto 1rem auto;
 }
 
@@ -382,7 +368,6 @@ input::placeholder {
     font-weight: bold;
 }
 
-
 .new-event {
     color: #1b1a1b;
     text-decoration: none;
@@ -391,4 +376,59 @@ input::placeholder {
 
 .new-event:hover {
     text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    header {
+        margin-left: 0; /* Remove a margem em telas menores */
+        flex-direction: column; /* Altera a direção do flex */
+    }
+
+    .left_container {
+        position: relative; /* Muda para relativo em telas menores */
+        width: 100%; /* Ocupa 100% da largura */
+        height: auto; /* Ajusta a altura */
+    }
+
+    .main_container {
+        margin-left: 0; /* Remove a margem em telas menores */
+        flex-direction: column; /* Altera a direção do flex */
+    }
+
+    .main_container img {
+        width: 100%; /* Imagem ocupa 100% da largura */
+        height: auto; /* Mantém a proporção */
+    }
+
+    .tasks a {
+        padding: 1rem; /* Reduz o padding */
+        font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .inicial_tools_options {
+        flex-direction: column; /* Altera a direção do flex */
+    }
+
+    .inicial_tools_options a {
+        width: 100%; /* Ocupa 100% da largura */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .main_container h1 {
+        font-size: 2rem; /* Ajusta o tamanho do título principal */
+    }
+
+    .main_container p {
+        font-size: 1rem; /* Ajusta o tamanho do parágrafo */
+    }
+
+    .bottom_tools a {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
 }
