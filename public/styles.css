@@ -90,8 +90,8 @@ nav {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    width: 100%; /
-    transition: 0.5s all ease;
+    width: 100%;
+    transition: 0.5s ease;
 }
 
 #header_search input:hover {
@@ -173,7 +173,7 @@ input::placeholder {
 }
 
 .recent_tasks {
- display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
