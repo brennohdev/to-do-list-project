@@ -346,6 +346,10 @@ input::placeholder {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #ebeaea;
     padding: 2rem;
     height: 40vh;
