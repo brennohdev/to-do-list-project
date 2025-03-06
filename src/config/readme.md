@@ -1,0 +1,1 @@
+Global configs like conections and jwt

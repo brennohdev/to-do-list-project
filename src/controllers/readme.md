@@ -1,0 +1,1 @@
+Logic to manipulate datas from UI.
