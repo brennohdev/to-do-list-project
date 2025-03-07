@@ -1,5 +1,5 @@
 const express = require('express');
-const { findUserbyEmail, comparePassword, generateToken, users } = require('../useCases/authUtils'); // Corrigindo importações
+const { findUserbyEmail, comparePassword, generateToken, users } = require('../useCases/authUtils'); 
 
 const router = express.Router();
 
