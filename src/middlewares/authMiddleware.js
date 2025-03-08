@@ -1,4 +1,5 @@
-import jwt from 'jsonwebtoken';
+require('dotenv').config();
+const jwt = require('jsonwebtoken');
 
 const authenticateToken = (req, res, next) => {
     const token = req.header('Authorization')?.replace('Bearer ', '');
@@ -7,8 +8,9 @@ const authenticateToken = (req, res, next) => {
         return res.status(401).json({ message: 'Unauthorized' });
     }
 
-    /*Verify the token */
-    jwt.verify(token, 'secret_hyper_secret', (err, decoded) => {
+
+    /*Verify the token*/
+    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => { // Pulling the secret from the .env file
         if (err) {
             return res.status(403).json({ message: 'Invalid or expired token' });
         }

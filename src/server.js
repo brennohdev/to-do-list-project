@@ -1,15 +1,13 @@
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
-const signupRoutes = require('./src/routes/signupRoute'); 
-const loginRoutes = require('./src/routes/loginRoute');  
+const signupRoutes = require('./routes/signupRoute.js');  
+const loginRoutes = require('./routes/loginRoute.js');  
 
 const app = express();
-const PORT = 3000;
+const PORT = 3001;
 
 app.use(cors());
-app.use(bodyParser.json());
-
+app.use(express.json()); // Substituindo body-parser por express.json()
 
 app.use('/signup', signupRoutes);
 app.use('/login', loginRoutes);
