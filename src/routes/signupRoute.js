@@ -1,5 +1,5 @@
-const express = require('express');
-const { findUserbyEmail, hashPassword, users } = require('../useCases/authUtils'); 
+import express from 'express';
+import { findUserbyEmail, hashPassword, users } from '../useCases/auth'; 
 
 const router = express.Router();
 

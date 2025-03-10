@@ -1,5 +1,7 @@
-require('dotenv').config();
-const jwt = require('jsonwebtoken');
+import dotenv from 'dotenv';
+import jwt from 'jsonwebtoken';
+
+dotenv.config();
 
 const authenticateToken = (req, res, next) => {
     const token = req.header('Authorization')?.replace('Bearer ', '');

@@ -1,8 +1,9 @@
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 
-const users = []; // Temporary array to store users
 
+
+''
 const findUserbyEmail = (email) => users.find(user => user.email === email);
 
 const hashPassword = async (password) => await bcrypt.hash(password, 10);

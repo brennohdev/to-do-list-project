@@ -1,13 +1,13 @@
-const express = require('express');
-const cors = require('cors');
-const signupRoutes = require('./routes/signupRoute.js');  
-const loginRoutes = require('./routes/loginRoute.js');  
+import express from 'express';
+import cors from 'cors';
+import signupRoutes from './routes/signupRoute.js';
+import loginRoutes from './routes/loginRoute.js';
 
 const app = express();
 const PORT = 3001;
 
 app.use(cors());
-app.use(express.json()); // Substituindo body-parser por express.json()
+app.use(express.json()); 
 
 app.use('/signup', signupRoutes);
 app.use('/login', loginRoutes);
