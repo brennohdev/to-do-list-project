@@ -1,9 +1,10 @@
 import express from 'express';
-import { findUserbyEmail, hashPassword, users } from '../useCases/auth'; 
+import { findUserbyEmail, hashPassword, users } from '../useCases/auth.js'; 
 
 const router = express.Router();
 
 router.post('/signup', async (req, res) => {
+    console.log('Signup route hit');
     const { name, email, password } = req.body;
 
     if (findUserbyEmail(email)) {
@@ -16,4 +17,4 @@ router.post('/signup', async (req, res) => {
     res.status(201).json({ message: 'User created successfully' });
 });
 
-module.exports = router;
+export default router;

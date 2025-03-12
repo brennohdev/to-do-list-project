@@ -1,16 +1,19 @@
 import express from 'express';
 import cors from 'cors';
-import signupRoutes from './routes/signupRoute.js';
-import loginRoutes from './routes/loginRoute.js';
+import signupRoute from './routes/signupRoute.js';
+import loginRoute from './routes/loginRoute.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
-const PORT = 3001;
+const PORT = 3000;
 
 app.use(cors());
 app.use(express.json()); 
 
-app.use('/signup', signupRoutes);
-app.use('/login', loginRoutes);
+app.use(signupRoute);
+app.use(loginRoute);
 
 app.get('/', (req, res) => {
     res.send('Express server is running');
