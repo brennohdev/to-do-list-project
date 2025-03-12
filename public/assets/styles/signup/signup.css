@@ -108,16 +108,14 @@ h2 {
 }
 
 .forget label p {
-    margin-top: 1rem;
+    margin-left: 8px;
 }
 
 .wrapper a {
-    color: #ffffff;
+    color: #ffdde1;
     text-decoration: none;
 }
-.account a {
-    color: #ffffff;
-}
+
 .wrapper a:hover {
     text-decoration: underline;
 }
@@ -141,4 +139,8 @@ button:hover {
     border-color: #ffffff;
 }
 
-
+.register {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+}

@@ -10,29 +10,31 @@
 
 <body>
     <div class="wrapper">
-    <form action="#">
-        <h2>Login Form</h2>
-        <div class="input-field">
-        <input type="text" id="login-form" required>
-        <label>Enter your email</label>
-        </div>
-        <div class="input-field">
-        <input type="password" required>
-        <label>Enter your password</label>
-        </div>
-        <div class="forget">
-        <label for="remember">
-            <input type="checkbox" id="remember">
-            <p>Remember me</p>
-        </label>
-        <a href="#">Forgot password?</a>
-        </div>
-        <button type="submit">Log In</button>
-        <div class="register">
-        <p>Don't have an account? <a href="#">Register</a></p>
-        </div>
-    </form>
+        <form id="login-form" action="javascript:void(0);">
+            <h2>Login Form</h2>
+            <div class="input-field">
+                <input type="text" id="email" required>
+                <label>Enter your email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" required>
+                <label>Enter your password</label>
+            </div>
+            <div class="forget">
+                <label for="remember">
+                    <input type="checkbox" id="remember">
+                    <p>Remember me</p>
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit" id="login-button">Log In</button>
+            <div class="register">
+                <p>Don't have an account? <a href="#" id="register">Register</a></p>
+            </div>
+        </form>
     </div>
+
+    <script src="./scripts/login.js"></script>
 </body>
 
-</html>                        
+</html>
