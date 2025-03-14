@@ -1,34 +1,41 @@
-const password = document.getElementById('password');
-const email = document.getElementById('email');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const loginButton = document.getElementById('login-button');
+const registerButton = document.getElementById('register');
 
+const handleLogin = async () => {
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
 
-document.getElementById('login-button').addEventListener('click', async () => {
-    
+    if (!email || !password) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
     try {
-        const response = await fetch ('http://localhost:3000/login', {
+        const response = await fetch('http://localhost:3000/login', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, password }),
         });
 
         const data = await response.json();
+        alert(data.message);
 
         if (response.ok) {
-            alert(data.message);
             localStorage.setItem('token', data.token);
             window.location.href = 'index.html';
-        } else {
-            alert(data.message);
         }
     } catch (error) {
-        console.error('Login try error:', error);
+        console.error('Login error:', error.message || error);
         alert('It was not possible to login. Try again.');
     }
-});
+};
 
-
-document.getElementById('register').addEventListener('click', () => {
+const redirectToRegister = () => {
     window.location.href = 'signup.html';
-});
+};
+
+// Event listeners
+loginButton.addEventListener('click', handleLogin);
+registerButton.addEventListener('click', redirectToRegister);

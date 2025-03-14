@@ -11,4 +11,5 @@ const comparePassword = async (password, hashedPassword) => await bcrypt.compare
 
 const generateToken = (email) => jwt.sign({ email }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
+
 export { findUserbyEmail, hashPassword, comparePassword, generateToken, users};
